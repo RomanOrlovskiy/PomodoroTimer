@@ -1,0 +1,24 @@
+﻿TODOs:
+
+- Should also consider not allowing resize option for the window. 
+- I would like to implement random Motivation image to display when messagebox triggers.
+  Or at at least make a sepparate menu page where I can randomly display images from specific directory (or url in the future).
+
+- It would be nice to create additional menu page for Reflections.
+- I could use MahApps.Metro library to improve UI and WPFToolKit for more controllers if I will need them.
+
+
+
+
+
+
+
+
+
+Finished:
+- Fix the timer display format on numbers less than 10. 
+- Message box triggers on 00:01 second, which is annoying. Even though Title displays 00:00 properly.
+	If I am correct, the problem here was with MessageBoxOptions parameter of MessageBox.Show method.
+	MessageBox.Show froze the MainWindow which didnt allow timer text to update.
+- When the timer start, first second doesnt feel like one second at all - The problem was with double 
+  tick event displaying same beginning time. So I moved Time-- before DisaplyTime to fix it.
